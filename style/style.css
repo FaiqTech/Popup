@@ -22,7 +22,8 @@
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
 }
 
 .hidden {
@@ -39,11 +40,8 @@
   line-height: 50px;
   border-radius: 15px;
   position: absolute;
-  z-index: 2;
-  opacity: 1;
-}
-.information__center.visible {
-  opacity: 1;
+  z-index: 4;
+  opacity: 3;
 }
 .information__center-content button {
   font-size: 30px;
@@ -68,4 +66,49 @@
   color: #00a3c9;
   margin-left: 10px;
   cursor: pointer;
+}
+
+.callorder {
+  border: 1px solid black;
+  width: 60%;
+  line-height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 0 40px 20px 40px;
+  margin-top: 12%;
+  margin-left: 15%;
+  position: absolute;
+  z-index: 3;
+}
+.callorder__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.callorder__title .close-btn {
+  font-size: 30px;
+  border: none;
+  background-color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.callorder .callorder__form-inpt {
+  padding: 12px 70px;
+  outline: none;
+  border-radius: 5px;
+}
+.callorder__btn {
+  padding: 15px 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #242e33;
+  color: white;
+  margin-left: 70%;
+  border: none;
+  font-size: 17px;
+}
+.callorder__btn:hover {
+  transition: 0.5s;
+  background-color: #00a3c9;
 }/*# sourceMappingURL=style.css.map */

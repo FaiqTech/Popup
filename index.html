@@ -9,45 +9,64 @@
 </head>
 <body>
     <div class="contact">
-    <button class="contact-btn">
-    <i class="fa-solid fa-phone">
-        <span class="fa-text">145</span>
-    </i>
-    </button>
+        <button class="contact-btn">
+            <i class="fa-solid fa-phone">
+                <span class="fa-text">145</span>
+            </i>
+        </button>
     </div>
 
     <div class="overlay hidden"></div> 
 
     <div class="information__center hidden">
         <div class="information__center-content">
-            <span class="information__center-content-text">
-                Məlumat mərkəzinə zəng</span>
+            <span class="information__center-content-text">Məlumat mərkəzinə zəng</span>
             <button class="information__center_content_btn">X</button>
         </div>
-
         <hr>
-
         <div class="information__center-contact-tool">
-           <h2>Sizə uyğun əlaqə vasitəsini seçin</h2>
-    
-           <div>
-               <i class="fa-solid fa-phone"></i>  
-               <span>Birbaşa zəng</span> 
-          </div>
-        
-       <div>
-            <i class="fa-solid fa-globe"></i>
-            <span>Onlayn zəng</span>
-       </div>
-        
-       <div>
-          <i class="fa-solid fa-book"></i>
-           <span>Zəng sifarişi</span>
-       </div>
-
+            <h2>Sizə uyğun əlaqə vasitəsini seçin</h2>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>Birbaşa zəng</span> 
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <span>Onlayn zəng</span>
+            </div>
+            <div class="onclick">
+                <i class="fa-solid fa-book"></i>
+                <span>Zəng sifarişi</span>
+            </div>
         </div>
     </div>
-   
+
+    <div class="callorder hidden">
+        <div class="callorder__title">
+            <h1>Zəng sifarişi</h1>
+            <button class="close-btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+        <hr>
+        <form class="callorder__form">
+            <p>Xidmət vaxtı: Bazar ertəsi - Cümə, 10:00–18:00</p>
+            <input class="callorder__form-inpt" type="text" placeholder="Ad, soyad">
+            <input class="callorder__form-inpt" type="tel" placeholder="Telefon">
+        </form>
+        <form class="callorder__form">
+            <input style="height:30px; width:30px; vertical-align: middle;" name="time" type="radio">
+            <label>Mümkün qədər tez</label>
+
+            <input style="height:30px; width:30px; vertical-align: middle;" name="time" type="radio">
+            <label>Nahardan əvvəl</label>
+
+            <input style="height:30px; width:30px; vertical-align: middle;" name="time" type="radio">
+            <label>Nahardan sonra</label>
+        </form>
+        <hr>
+        <button class="callorder__btn">Zəng sifarişi</button>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
